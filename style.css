@@ -12,14 +12,94 @@ header {
     background-size: cover;
 }
 
-.container-header {
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar .logo a {
     border: 1px solid;
+    display: inline-block;
+    padding: 9px 20px;
+    background: deepskyblue;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.nav-bar .logo{
+
+    float: left;
+}
+
+.nav-bar .bar ul li {
+    float: left;
+    list-style-type: none;
+}
+
+.nav-bar .bar .lists {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar .bar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .bar ul li a:hover {
+    background: deepskyblue;
+}
+
+.container-header {
+    border: 1px solid white;
     box-sizing: border-box;
     max-width: 1470px;
     margin: auto;
     padding: 50px;
 }
+.container-header .wrap-gamb {
+    width: 100%;
+}
+.container-header .gamburger {
+    display: none;
+    /*padding: 6px 10px;*/
+    text-align: right;
+    color: darkorange;
+}
+.container-header .gamburger i {
+    padding: 6px 10px;
+}
+.container-header .gamburger i:hover {
+    background: deepskyblue;
+    color: white;
 
+}
+
+@media (min-width: 320px ) and ( max-width: 1200px ) {
+    .container-header .gamburger {
+        display: block;
+    }
+    .lists {
+        display: none;
+    }
+    .nav-bar .bar ul li, .nav-bar .bar .lists {
+        float: none;
+    }
+    .nav-bar .bar ul li a {
+        width: 100%;
+    }
+    .nav-bar .bar{
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+
+}
+
+/*======================================================================*/
 .container-main {
     border: 1px solid;
     box-sizing: border-box;
@@ -49,7 +129,6 @@ header {
 
 .item-up_1, .item-up_2, .item-up_3 {
     border-radius: 3px;
-
 }
 
 .fa-caret-right {
@@ -62,6 +141,10 @@ header {
 }
 
 .nety {
+    display: none;
+}
+
+.nety_2 {
     display: none;
 }
 
@@ -78,6 +161,8 @@ header {
 
 .second-main {
     margin-top: 20px;
+    border: 1px solid;
+    padding: 10px;
 }
 
 .second-main a {
@@ -112,12 +197,15 @@ th {
     background: gainsboro;
 }
 
-.wrapper {
-    position: relative;
-}
+.blackish {
 
-.second-main {
-
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .okno-pop-up {
@@ -172,6 +260,7 @@ span {
 .third-main {
     margin-top: 30px;
     border: 1px solid;
+    padding: 10px;
 }
 
 .third_1, .third_2, .third_3 {
@@ -189,11 +278,14 @@ span {
 
 .third-our_1, .third-our_2, .third-our_3 {
     padding: 30px;
+    border: 1px solid;
 }
 
 /*=====================================================================*/
 .fourth-main {
     margin-top: 30px;
+    border: 1px solid;
+    padding: 10px;
 }
 
 .lol {

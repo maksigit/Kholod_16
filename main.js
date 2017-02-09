@@ -1,5 +1,24 @@
 
+    // $('.menu-icon').on('click', function () {
+    //     $('bar-1').toggle();
+    // });
 
+
+// ===============================PROBA=================================
+$(document).ready(function () {
+
+    $('.gamburger').click(function () {
+        $('.bar .lists').slideToggle(500)
+    });
+    $(window).resize(function () {
+        if ($(window).width()>500){
+            $('.bar .lists').removeAttr('style')
+        }
+    })
+});
+
+
+// ================================================================
 $('.sulka_1').on('click', function () {
     $('.item-up_1').toggleClass('fa-sort-desc');
     $('.item-up_1').toggleClass('backblue');
@@ -20,6 +39,7 @@ $('.sulka_3').on('click', function () {
 
 $('.great, .clouse a').on('click', function () {
     $('.okno-pop-up').slideToggle('nety');
+    $('.blackish').toggleClass('nety');
 });
 
 // ================================================================
