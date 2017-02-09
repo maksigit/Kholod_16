@@ -1,0 +1,239 @@
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+header {
+    background: url("images/photo.png") no-repeat;
+    background-size: cover;
+}
+
+.container-header {
+    border: 1px solid;
+    box-sizing: border-box;
+    max-width: 1470px;
+    margin: auto;
+    padding: 50px;
+}
+
+.container-main {
+    border: 1px solid;
+    box-sizing: border-box;
+    max-width: 1470px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.container-main .first-main {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.container-main .first-main a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-main .first-main .item-up_1, .item-up_2, .item-up_3 {
+    background: gainsboro;
+}
+
+.item-up_1, .item-up_2, .item-up_3, .item-bottom_1, .item-bottom_2, .item-bottom_3 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.item-up_1, .item-up_2, .item-up_3 {
+    border-radius: 3px;
+
+}
+
+.fa-caret-right {
+    padding-right: 5px;
+}
+
+.item-bottom_1, .item-bottom_2, .item-bottom_3 {
+    padding: 20px;
+    margin-bottom: 3px;
+}
+
+.nety {
+    display: none;
+}
+
+.container-main .first-main .backblue {
+    background: deepskyblue;
+    color: white;
+}
+
+.fa-caret-right {
+    display: block;
+}
+
+/*=======================================================================*/
+
+.second-main {
+    margin-top: 20px;
+}
+
+.second-main a {
+    border: 1px solid;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background: gainsboro;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.second-main a:hover {
+    background: gray;
+}
+
+.second-main a:focus, .second-main .clouse:focus {
+    background: deepskyblue;
+    color: white;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid gainsboro;
+}
+
+th {
+    background: gainsboro;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.second-main {
+
+}
+
+.okno-pop-up {
+    background: white;
+    border: 1px solid;
+    position: fixed;
+    max-width: 320px;
+    padding: 2px;
+    top: 40%;
+    left: 40%;
+}
+
+.title-great {
+    background: gainsboro;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.clouse {
+    float: right;
+}
+
+.clouse a {
+    color: black;
+    padding: 1px 3px;
+    display: inline-block;
+    line-height: normal;
+    background: ghostwhite;
+    text-decoration: none;
+}
+
+.instruction {
+    padding: 20px 10px;
+}
+
+#form {
+    padding: 0 10px 20px;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px 0;
+}
+
+span {
+    display: block;
+}
+
+/*=================================================================*/
+
+.third-main {
+    margin-top: 30px;
+    border: 1px solid;
+}
+
+.third_1, .third_2, .third_3 {
+    display: inline-block;
+}
+
+.third-main a {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+    background: lightgray;
+}
+
+.third-our_1, .third-our_2, .third-our_3 {
+    padding: 30px;
+}
+
+/*=====================================================================*/
+.fourth-main {
+    margin-top: 30px;
+}
+
+.lol {
+    cursor: pointer;
+}
+
+.box {
+    display: none;
+    position: absolute;
+    border: 3px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+/*=======================================================================*/
+.container-footer {
+    border: 1px solid;
+    box-sizing: border-box;
+    max-width: 1470px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (min-width: 768px ) and ( max-width: 2000px ) {
+
+}
+
+@media (min-width: 320px ) and ( max-width: 768px ) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
