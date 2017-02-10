@@ -27,8 +27,8 @@ header {
     color: white;
     font-weight: 700;
 }
-.nav-bar .logo{
 
+.nav-bar .logo {
     float: left;
 }
 
@@ -61,41 +61,51 @@ header {
     margin: auto;
     padding: 50px;
 }
+
 .container-header .wrap-gamb {
     width: 100%;
 }
+
 .container-header .gamburger {
     display: none;
-    /*padding: 6px 10px;*/
     text-align: right;
     color: darkorange;
 }
+
+.di-block {
+    display: block;
+}
+
 .container-header .gamburger i {
     padding: 6px 10px;
 }
+
 .container-header .gamburger i:hover {
     background: deepskyblue;
     color: white;
-
 }
 
-@media (min-width: 320px ) and ( max-width: 1200px ) {
+@media (min-width: 320px ) and ( max-width: 600px ) {
     .container-header .gamburger {
         display: block;
+        cursor: pointer;
     }
+
     .lists {
         display: none;
     }
+
     .nav-bar .bar ul li, .nav-bar .bar .lists {
         float: none;
     }
+
     .nav-bar .bar ul li a {
         width: 100%;
     }
-    .nav-bar .bar{
+
+    .nav-bar .bar {
         background: rgba(0, 0, 0, 0.4);
     }
-
 
 }
 
@@ -129,6 +139,11 @@ header {
 
 .item-up_1, .item-up_2, .item-up_3 {
     border-radius: 3px;
+    cursor: pointer;
+}
+
+.container-main .item-up_1:hover, .item-up_2:hover, .item-up_3:hover {
+    background: gray;
 }
 
 .fa-caret-right {
@@ -175,11 +190,16 @@ header {
     display: inline-block;
 }
 
-.second-main a:hover {
+.second-main a:hover, .clouse:hover {
     background: gray;
+    cursor: pointer;
 }
 
-.second-main a:focus, .second-main .clouse:focus {
+.second-main .clouse {
+    border: 1px solid;
+}
+
+.second-main a:focus, .second-main .okno-pop-up .title-great .clouse:focus {
     background: deepskyblue;
     color: white;
 }
@@ -197,8 +217,13 @@ th {
     background: gainsboro;
 }
 
-.blackish {
+@media (min-width: 320px ) and ( max-width: 380px ) {
+    table {
+        font-size: 11px;
+    }
+}
 
+.blackish {
     background: rgba(0, 0, 0, 0.4);
     position: fixed;
     width: auto;
@@ -226,15 +251,10 @@ th {
 
 .clouse {
     float: right;
-}
-
-.clouse a {
     color: black;
     padding: 1px 3px;
-    display: inline-block;
     line-height: normal;
     background: ghostwhite;
-    text-decoration: none;
 }
 
 .instruction {
@@ -263,22 +283,30 @@ span {
     padding: 10px;
 }
 
-.third_1, .third_2, .third_3 {
-    display: inline-block;
-}
-
-.third-main a {
+.tab {
     display: inline-block;
     padding: 10px;
     border: 1px solid;
+    border-bottom: none;
     text-decoration: none;
     color: black;
     background: lightgray;
+    cursor: pointer;
 }
 
-.third-our_1, .third-our_2, .third-our_3 {
+.tab:hover {
+    background: deepskyblue;
+}
+
+.tab_item {
     padding: 30px;
     border: 1px solid;
+    border-top: none;
+    background: deepskyblue;
+}
+
+.tab-backg {
+    background: deepskyblue;
 }
 
 /*=====================================================================*/
@@ -288,7 +316,7 @@ span {
     padding: 10px;
 }
 
-.lol {
+.wrap-input {
     cursor: pointer;
 }
 
@@ -298,6 +326,7 @@ span {
     border: 3px solid gray;
     border-radius: 3px;
     padding: 5px;
+    background: white;
 }
 
 /*=======================================================================*/
@@ -307,6 +336,15 @@ span {
     max-width: 1470px;
     margin: auto;
     padding: 20px;
+    background: url("images/photo.png") no-repeat;
+    background-size: cover;
+}
+
+.container-footer .avtor {
+    font-size: 20px;
+    font-family: 'Sansita', sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
 @media (min-width: 768px ) and ( max-width: 2000px ) {
