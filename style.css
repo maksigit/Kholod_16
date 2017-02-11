@@ -242,6 +242,11 @@ th {
     top: 40%;
     left: 40%;
 }
+@media (min-width: 320px ) and ( max-width: 380px ) {
+    .okno-pop-up {
+        left: 20%;
+    }
+}
 
 .title-great {
     background: gainsboro;
